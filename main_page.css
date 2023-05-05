@@ -1,0 +1,281 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+header {
+	background-color: #000;
+	height: 80px;
+	border-bottom: 1px solid #e1e1e1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+  	box-shadow: 0 2px 4 px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+  	padding: 0 20px;
+ 	box-sizing: border-box;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+  	flex-direction: row;
+}
+
+nav ul li {
+	position: relative;
+  	width: 100%;
+  	text-align: center;
+}
+
+nav ul li a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 20px;
+	position: relative;
+	transition: 0.2s all ease-in-out;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+nav ul li:hover > a {
+	background-color: #fff;
+	color: black;
+}
+
+.main {
+	max-width: 1200px;
+	margin: 80px auto 50px;
+	text-align: center;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.main img {
+	display: block;
+	max-width: 100%;
+  	margin: 50px auto;
+}
+
+.main h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: #333;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+		to{
+			opacity: 1;
+		}
+}
+
+.main p {
+	font-size: 24px;
+	margin-bottom: 60px;
+	text-align: center;
+	font-weight: 500;
+	color: #666;
+}
+
+.featured-brands {
+	max-width: 1200px;
+	margin: 0 auto 50px;
+	text-align: center;
+}
+.featured-brands p{
+	border: 2 px solid #fff;
+}
+
+.featured-brands h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+  	color: #000;
+}
+
+.brand-names{
+	padding: 20px 0;
+ 	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+	border: 2px solid #fff;
+  
+}
+
+.brand-names {
+	display: flex;
+  	justify-content: center;
+	align-items: center;
+	overflow-x: scroll;
+	padding: 20px 0;
+}
+
+.brand-names p {
+	display: inline-block;
+	font-size: 24px;
+	margin: 0 20px;
+  	padding: 10px 20px;
+  	border: 2px solid #ccc;
+  	border-radius: 5px;
+  	cursor: pointer;
+  	transition: all 0.2s ease-in-out;
+  	color: #333;
+}
+
+.brand-names:hover{
+  	color: #fff;
+}
+
+.horizontal-scroll {
+  	padding: 0 20px;
+	max-width: 800px;
+	margin: 50px auto;
+  	position: relative;
+ 	overflow: hidden;
+  	box-sizing: border-box;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.horizontal-scroll h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+  	color: #000;
+}
+
+.scroll-container {
+	display: flex;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+
+}
+
+.scroll-container img {
+	display: block;
+	margin-right: 20px;
+	scroll-snap-align: center;
+  	width: auto;
+  	height: auto;
+  	border-radius: 10px;
+  	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  	transition: all 0.3s ease-in-out;
+}
+
+.scroll-container img:last-child {
+  margin-right: 0;
+}
+
+.contact-us {
+	max-width: 1200px;
+	margin: 50px auto;
+}
+
+.contact-us h2 {
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px;
+  	color:#fff;
+}
+
+.contact-us p {
+	font-size: 24px;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 0;
+  	color: #666;
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  	margin-top: 50px
+}
+
+.social-media a {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.social-media img {
+	width: 40px;
+  	height: 40px;
+  	border-radius: 50%;
+  	transition: all 0.2s ease-in-out;
+}
+
+.social-media img:hover{
+  	transform: scale(1.2);
+}
+
+.comments {
+	background-color: #f9f9f9;
+	padding: 50px;
+	text-align: center;
+  }
+  
+  .comments h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+  }
+  
+  .comments-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .proof {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	margin: 20px;
+	max-width: 400px;
+	padding: 20px;
+	text-align: left;
+  }
+  
+  .proof p {
+	font-size: 18px;
+	margin-bottom: 10px;
+  }
+  
+  .customer-name {
+	font-weight: bold;
+	margin-top: 20px;
+  }
+
+  footer {
+	padding: 20px;
+	text-align: center;
+	font-size: 12px;
+	color: #000;
+  }
